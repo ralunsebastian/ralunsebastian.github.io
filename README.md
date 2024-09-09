@@ -1,1 +1,1 @@
-Sebastian Oyarzo
+curriculum Sebastian Oyarzo
