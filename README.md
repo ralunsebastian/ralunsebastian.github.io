@@ -1,1 +1,0 @@
-Curriculum Sebastian Oyarzo
