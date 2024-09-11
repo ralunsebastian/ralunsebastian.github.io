@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo de la página */
+body {
+    margin: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Módulo del banner */
+.banner {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 20px 20px 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.H1-PRINCIPIO {
+    font-size: 80px;
+    color: #eef2f6;
+    margin: 0;
+    line-height: 1.1;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Estilos generales para las secciones */
+section {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+section > h1 {
+    background-color: rgb(37, 36, 36);
+    padding: 40px 15px;
+    color: #eef2f6;
+}
+
+section > h2 {
+    background-color: rgb(238, 230, 230);
+    padding: 40px 15px;
+    color: #eef2f6;
+}
+
+/* Módulo de caracteristicas principales*/
+.section-galeria {
+    background-color: rgb(37, 36, 36);
+    padding: 20px;
+    text-align: center;
+}
+
+.section-galeria h1 {
+    color: #eef2f6;
+    font-size: 2em;
+    padding: 40px 15px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 35px;
+    background-color: rgb(37, 36, 36);
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.card i {
+    color: white;
+    font-size: 2em;
+}
+
+.card p {
+    padding-top: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Módulo de la galería de imágenes */
+.container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    border: 1px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 25%;
+    display: flex;
+}
+
+.box > img {
+    width: 100%;
+}
+
+/* Módulo de la información */
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-texto {
+    background-color: black;
+    color: white;
+    width: 60%;
+    padding: 20px;
+    font-size: 1em;
+}
+
+.contenedor-img {
+    width: 35%;
+    text-align: right;
+}
+
+.contenedor-img > img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Pie de la pagina */
+footer{
+    color:white;
+    width: 100%;
+}

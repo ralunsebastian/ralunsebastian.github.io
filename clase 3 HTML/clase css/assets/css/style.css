@@ -1,0 +1,31 @@
+.titulo{
+    color: red;
+}
+.titulo-2{
+    color: blue;
+    font-size: 50px;
+}
+
+#titulo-3{
+    color: rgb(62, 122, 122);
+    font-size: 50px;
+}
+
+
+.skills{
+    color:rgb(49, 87, 75) ;
+}
+body{
+    background-color: antiquewhite;
+
+    
+}
+.tabla{
+    
+    color:black;
+    font-size: 10px;
+    border: 2px solid green;
+    border-color: green;
+    padding: 50px;
+    margin: 20px;
+}

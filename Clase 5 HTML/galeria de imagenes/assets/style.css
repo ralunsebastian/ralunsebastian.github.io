@@ -1,0 +1,26 @@
+
+
+p{
+    font-size: medium;
+    text-align: center;
+  border: 1px solid green;
+}
+
+
+/*ESTILO DEL DIV PRINCIPAL (PADRE) */
+.container{
+
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  border: 1px;
+  flex-wrap: wrap; /* mantiene las propiedades de tamaño las cajas hijo */
+}
+/*ESTILO DEL LOS DIV SECUNDARIOS(HIJOS) */
+.box{
+  width: 25%;
+}
+/* SI HAY UNA IMAGEN DENTRO DE LOS DIV HIJOS SE TRATA ASI */
+.box >img{
+  width: 100%;
+}

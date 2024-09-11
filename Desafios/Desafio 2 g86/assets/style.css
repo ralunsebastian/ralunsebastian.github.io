@@ -1,0 +1,88 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    position: fixed; /* Mantiene el encabezado fijo en la parte superior */
+    background-color: #007bff; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box;
+    top: 0; 
+    left: 0; 
+}
+
+/* Estilos para el banner de la seccion principal*/
+#banner {
+    background-image: url("./img/banner\ 2.webp"); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Estilo para las letras que van encima de la imgen de la seccion principal  */
+#banner h2 {
+    display: inline-block; /* Hace que el fondo se ajuste al tamaño del texto */
+    margin: 1em; /* Ajusta el margen*/
+    font-size: 2.5em; 
+    background-color: rgba(181, 202, 224, 0.6); /* opaca la imagen para que las letras se puedan ver encima de la imagen */
+    color: white; /* Color del texto*/
+    padding: 10px; /* Espacio interno alrededor del texto */
+    border-radius: 5px; /* Bordes del fondo de las letras(redondeado) */
+}
+#banner p {
+    margin: 1%; /* Margen arriba y abajo del párrafo */
+    font-size: 1.2em; 
+    background-color: rgba(0, 123, 255, 0.4); 
+    color: white; 
+    padding: 5px; /* Espacio interno alrededor del texto */
+    border-radius: 5px; 
+    display: inline-block; /* Ajusta el fondo al tamaño del texto */
+}
+
+/* Estilos para el encabezado h1 */
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/*tabla */
+.contenedor-tabla {
+    margin: 0 auto; /* Centra la tabla horizontalmente */
+    width: 40%; /* Ajusta el ancho de la tabla  */
+    border-collapse: collapse; /* Elimina el espacio entre los bordes de las celdas */
+}
+
+table {
+    width: 80%; /* Asegura que la tabla ocupe todo el ancho del contenedor */
+    border: 1px solid #ddd; /* Color de borde para la tabla */
+}
+
+th, td {
+    padding: 10px; /* Espacio interno en las celdas */
+    text-align: center; /* Alinea el texto al centro */
+    border-bottom: 1px solid #ddd; /* Línea debajo de las celdas */
+}
+
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: #007bff; 
+    color: white; 
+    text-align: center; /* Centra el texto dentro del footer */
+    padding: 20px; 
+    position: relative; /* Asegura que el footer se posicione en relación con el resto del contenido */
+    bottom: 0; 
+    width: 100%; /* Asegura que el footer ocupe todo el ancho de la página */
+}

@@ -1,0 +1,161 @@
+----------------Muestra mi ubicacion dentro del directorio---------------
+pwd
+----------------Muestra el contenido del directorio-----------------
+ls
+muestra con una lista sucesiva con detalle:
+ls-l
+muestra con una lista sucesiva con detalle y archivos ocultos:
+ls -la
+------------------crear un archivo---------------cd 
+touch 
+ejemplo
+touch index.html
+-----------abrir la carpeta en modo grafico(windows)-----------
+start .
+
+----configurar git------
+ git config --global user.name 'Sebastian Oyarzo'
+ git config --global user.email 'oyarzo.sebastian@gmail.com'
+ git config --global --list
+user.email=oyarzo.sebastian@gmail.com
+user.name=Sebastian Oyarzo
+-----iniciar git en el directorio------
+ git init
+ ls -la
+total 12
+drwxr-xr-x 1 Windows 10 197121 0 Sep  2 20:13 ./
+drwxr-xr-x 1 Windows 10 197121 0 Sep  2 19:53 ../
+drwxr-xr-x 1 Windows 10 197121 0 Sep  2 20:13 .git/
+-rw-r--r-- 1 Windows 10 197121 0 Sep  2 19:55 index.html
+
+--------dentro de la carpeta git--------
+ cd ./.git/
+$ ls -la
+total 11
+drwxr-xr-x 1 Windows 10 197121   0 Sep  2 20:13 ./
+drwxr-xr-x 1 Windows 10 197121   0 Sep  2 20:13 ../
+-rw-r--r-- 1 Windows 10 197121  21 Sep  2 20:13 HEAD
+-rw-r--r-- 1 Windows 10 197121 130 Sep  2 20:13 config
+-rw-r--r-- 1 Windows 10 197121  73 Sep  2 20:13 description
+drwxr-xr-x 1 Windows 10 197121   0 Sep  2 20:13 hooks/
+drwxr-xr-x 1 Windows 10 197121   0 Sep  2 20:13 info/
+drwxr-xr-x 1 Windows 10 197121   0 Sep  2 20:13 objects/
+drwxr-xr-x 1 Windows 10 197121   0 Sep  2 20:13 refs/
+
+------------agregar fichero----------------
+uno por uno:
+git add nombre_archivo
+agregar todos los ficheros:
+git add --all
+git add . 
+luego agregar una descripcion:
+git commit -m "descripcion"
+
+enter y listo
+
+ejemplo:
+
+
+
+----------ver los cambios------------------
+git log
+git status
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 ~/desktop/g86 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 ~/desktop/g86 (main)
+$ git add .
+Windows 10@DESKTOP-TIGQ3UD MINGW64 ~/desktop/g86 (main)
+$ git commit -m 'fix: se agrega un h3'
+
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 ~/desktop/g86 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 ~/desktop/g86 (main)
+$ git commit -m 'fix: se agrega un h2'
+[main 6bcb757] fix: se agrega un h2
+ 1 file changed, 1 insertion(+)
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 ~/desktop/g86 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+
+-----------------------subida exitosa--------------------
+
+
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 /c/users
+$ cd "windows 10"
+
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 /c/users/windows 10
+$ cd desktop/
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 /c/users/windows 10/desktop
+$ ls
+ CapCut.lnk*                        'codigo original index.txt'
+'Curso Udemy'/                       declaracion_jurada_Funcionario.pdf
+'Desafio LATAM'/                     desktop.ini
+'Documentos trabajo fiscalia'/      'documentos camioneta'/
+ Gameloop.lnk*                      'documentos laborales'/
+ Insomnia.lnk*                       g86/
+ MONGODB/                            heroku.txt
+'Microsoft Edge.lnk'*               'minuta reunion 22-07-2024.txt'
+'Nuevo documento de texto (2).txt'   node_modules/
+'Nuevo documento de texto.txt'       package-lock.json
+'Patagonia net DOCUMENTOS'/          package.json
+ Plano.jpg                           postgres.txt
+ Postman.lnk*                       'proyecto de mejoras.docx'
+'Visual Studio Code.lnk'*           'proyecto de mejoras.rtf'
+'Zoom Workplace.lnk'*               'shorts para YT'/
+ api-udemy/                          turismo/
+'carnet licencia'/
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 /c/users/windows 10/desktop
+$ cd g86/
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 /c/users/windows 10/desktop/g86 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+Windows 10@DESKTOP-TIGQ3UD MINGW64 ~/desktop/g86 (main)
+$ git commit -m 'fix: se agrega un h3'
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 /c/users/windows 10/desktop/g86 (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 974 bytes | 974.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ralunsebastian/desafioLatam
+   3ad3f6f..c90715e  main -> main
+
+Windows 10@DESKTOP-TIGQ3UD MINGW64 /c/users/windows 10/desktop/g86 (main)
+$
+
+
+
+----------------demo completo---------------------
+
+
+
+
