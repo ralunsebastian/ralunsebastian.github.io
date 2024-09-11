@@ -92,3 +92,44 @@
   }
   
 
+/* Estilos personalizados para la barra de navegación */
+
+
+.navbar-brand {
+    color: #f4fcf8; /* Color del texto de la marca */
+    font-weight: bold; /* Fuente en negrita para la marca */
+    font-size: 1.5rem; /* Tamaño de fuente */
+}
+
+.navbar-brand:hover {
+    color: #5f2525; /* Color del texto cuando el mouse pasa sobre la marca */
+}
+
+.nav-link {
+    color: #f3eded; /* Color de los enlaces de navegación */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    margin-left: 15px; /* Espaciado entre los enlaces */
+}
+
+.nav-link:hover {
+    color: #702a2a; /* Color de los enlaces cuando el mouse pasa sobre ellos */
+}
+
+.navbar-toggler {
+    border: none; /* Elimina el borde del botón de menú */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path stroke="%23ffffff" stroke-width="3" d="M5 7h20M5 15h20M5 23h20"/></svg>');
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        padding-right: 0; /* Ajuste para que los enlaces no tengan margen en pantallas pequeñas */
+        padding-left: 0;
+        font-size: 1rem; /* Ajustar el tamaño de fuente en pantallas pequeñas */
+    }
+}
+.nav-link, .btn {
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
