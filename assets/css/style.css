@@ -6,11 +6,21 @@
   }
   
   body {
-    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
   }
+
+  @font-face {
+    font-family: "Suse Bold";
+    src: url("assets/fonts/SUSE-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Suse Medium";
+    src: url("assets/fonts/SUSE-Medium.ttf");
+  }
+
   
   /* Header tipo landing page */
  /* Estilos del banner animado */
@@ -57,11 +67,13 @@
   .space-content h1 {
     font-size: 4rem;
     margin-bottom: 10px;
+    font-family: "Suse Bold", sans-serif;
   }
   
   .space-content p {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    font-family: "Suse Medium", sans-serif;
   }
   
   .btn {
@@ -180,6 +192,7 @@
   .space-background p,
   .space-background ul {
     color: #fff; /* Color de texto para contraste */
+
   }
   
   /* Opcional: Añadir un overlay para mejorar la legibilidad */
@@ -258,3 +271,4 @@
 .nav-link, .btn {
     transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
+
