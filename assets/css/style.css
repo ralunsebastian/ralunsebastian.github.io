@@ -323,14 +323,4 @@ footer {
   font-size: 1.2rem; /* Tamaño de fuente */
 }
 
-/* Asegura que el contenido principal crezca y empuje el footer al final de la página */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
-/* Espaciado inferior en la sección de proyectos para evitar que el contenido toque el footer */
-.space-banner {
-  margin-bottom: 2rem;
-}
