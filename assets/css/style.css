@@ -258,3 +258,79 @@
 .nav-link, .btn {
     transition: color 0.3s ease; /* Transición suave para el cambio de color */
 }
+
+/* Asegura que el contenedor de las tarjetas tenga una altura adecuada */
+#proyectos {
+  padding: 10rem 0; /* Espaciado alrededor de la sección */
+}
+
+/* Estilo para las tarjetas */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Asegura que la tarjeta ocupe todo el espacio disponible */
+  max-height: 100%; /* Evita que la tarjeta se desborde verticalmente */
+  overflow: hidden; /* Oculta cualquier contenido desbordado */
+}
+
+/* Ajuste de las imágenes dentro de la tarjeta */
+.card-img-top {
+  width: 100%; /* Se asegura de que la imagen no exceda el ancho de la tarjeta */
+  height: 200px; /* Ajusta la altura de la imagen para que encaje bien */
+  object-fit: cover; /* Mantiene la imagen proporcional sin deformarla */
+}
+
+/* Asegura que el cuerpo de la tarjeta ocupe el espacio necesario */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden; /* Evita que el contenido del cuerpo se desborde */
+}
+
+/* Ajusta el espaciado entre los elementos del cuerpo de la tarjeta */
+.card-body > * {
+  margin-bottom: 1rem; /* Espacio entre los elementos del cuerpo de la tarjeta */
+}
+
+/* Mantiene el botón al final de la tarjeta */
+.card .btn {
+  align-self: center;
+  margin-top: auto;
+}
+
+/* Ajusta la disposición en pantallas pequeñas */
+@media (max-width: 768px) {
+  .card {
+    min-height: 300px; /* Ajusta la altura mínima para pantallas pequeñas */
+  }
+
+  .card-img-top {
+    height: 150px; /* Ajusta la altura de la imagen para pantallas pequeñas */
+  }
+}
+
+
+/* Estilo para el footer */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  text-align: center;
+  padding: 1rem 0; /* Espaciado vertical */
+  font-size: 1.2rem; /* Tamaño de fuente */
+}
+
+/* Asegura que el contenido principal crezca y empuje el footer al final de la página */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Espaciado inferior en la sección de proyectos para evitar que el contenido toque el footer */
+.space-banner {
+  margin-bottom: 2rem;
+}
